@@ -1,0 +1,21 @@
+#divIdBox{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+}
+
+img{
+    width: 500px;
+    height: 400px;
+}
+
+#headlineMoving{
+    position: relative;
+}
+
+#imgID:hover{
+    width: 600px;
+    height: 500px;
+}
+
