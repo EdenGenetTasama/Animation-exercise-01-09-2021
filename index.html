@@ -49,10 +49,32 @@
         <button type="button" id="buttonchangOrderID">CHANGELING ORDER</button>
 
     </div>
-    
         <h2 id="headlineMoving">Eden Genet Tasama</h2>
-
     <br>
+    <!-- 1.	צרו טופס עם שדות: שם פרטי, שם משפחה, אימייל, תמונה, טלפון וססמאות. -->
+    <form id="formID">
+        <label type="">First Name: </label>
+        <input type="text" id="firstNameInput" required>
+        <br>
+        <label type="">Last Name: </label>
+        <input type="text" id="lastNameInput"  required>
+        <br>
+        <label type="">Email: </label>
+        <input type="email" id="emailInput" required>
+        <br>
+        <label type="">PhoneNumber: </label>
+        <input type="number" id="numberInput" required>
+        <br>
+        <label type="">Password: </label>
+        <input type="password" id="passwordInput" minlength="1" required>
+        <br>
+        <label type="">confirm Password:</label>
+        <input type="password" id="confirmPasswordInput" minlength="1" required>
+        <br>
+        <button type="button" id="buttonInput">SEND INFO</button>
+
+        <div id="divThatShowErr"></div>
+    </form>
 
 
     <script src="./main.js"></script>

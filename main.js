@@ -455,4 +455,21 @@ imgID.onmouseover=(event)=>{
     clearInterval(interval);
 
 } 
-   
+
+
+formID.onsubmit=(event)=>{
+    event.prevenDefault()
+}
+
+// ================================================================
+// form
+// 2.	הוסיפו מנגנון בדיקת אימות לססמאות.
+buttonInput.onclick=()=>{
+    if(passwordInput.value == confirmPasswordInput.value){
+        divThatShowErr.innerText ="Account ready"
+    }
+    else{
+        divThatShowErr.innerText = "The password are not the same"
+    }
+}
+
