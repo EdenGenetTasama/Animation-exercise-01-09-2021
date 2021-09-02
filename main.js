@@ -403,10 +403,10 @@ buttonChangeID.onclick = () => {
 // 7.	צרו כפתור שמערבב את סדר התמונות.
 // לא צלחתי
 var randomImg = Math.floor(Math.random() * 6);
-m = 0;
 
 buttonchangOrderID.onclick = () => {
-  for (let i = 0; i < 6; i++) {
+  m = 0;
+  for (let m = 0; m < 6; m++) {
     imgID.src = arrayOfImg[randomImg];
   }
 };
@@ -456,9 +456,13 @@ imgID.onmouseover=(event)=>{
 
 } 
 
+// וודא שהסיסמה באורך של לפחות 8 תווים.
 
 formID.onsubmit=(event)=>{
-    event.prevenDefault()
+    event.prevenDefault();
+    if(passwordInput.value.length > 8 ){
+      return alert("password to long")
+    }
 }
 
 // ================================================================
@@ -473,3 +477,7 @@ buttonInput.onclick=()=>{
     }
 }
 
+
+// ================================================================
+
+// וודא שהסיסמה באורך של לפחות 8 תווים.
